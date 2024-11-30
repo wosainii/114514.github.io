@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title></title>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+  <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/"
+            }
+        }
+    </script>
+  <script type="module" src="./js/3dtext.js"></script>
+  
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>禁止 F12</title>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            // 检查按下的键是否是 F12
+            if (event.key === 'F12') {
+                event.preventDefault(); // 阻止默认行为
+                alert('请不要偷我的源码谢谢！');
+            }
+        });
+    </script>
+  
+  
+</head>
+
+<body>
+
+</body>
+
+</html>
