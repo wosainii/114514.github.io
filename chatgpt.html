@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatgpt</title>
+    <style>
+        /* 设置html和body的高度为100% */
+        html, body {
+            height: 100%;
+            margin: 0; /* 去掉默认的外边距 */
+        }
+
+        /* 设置iframe的样式 */
+        .iframe-container {
+            position: relative;
+            width: 100%; /* 宽度为100% */
+            height: 100%; /* 高度为100% */
+            overflow: hidden; /* 隐藏溢出部分 */
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* 宽度为100% */
+            height: 100%; /* 高度为100% */
+            border: none; /* 去掉边框 */
+        }
+    </style>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>禁止 F12</title>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            // 检查按下的键是否是 F12
+            if (event.key === 'F12') {
+                event.preventDefault(); // 阻止默认行为
+                alert('请不要偷我的源码谢谢！');
+            }
+        });
+    </script>
+  
+</head>
+<body>
+    
+    <div class="iframe-container">
+        <iframe src="https://ijk.moe/content/catgpt/" title="Example Site"></iframe>
+    </div>
+</body>
+</html>
